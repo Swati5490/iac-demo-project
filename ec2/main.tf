@@ -24,7 +24,7 @@ resource "aws_instance" "jenkins_ec2_instance" {
     host                      =       self.public_ip
     type                      =       "ssh"
     user                      =       "ubuntu"
-    private_key               =       file("/Users/swati/Desktop/Projects/iac-demo-project/jenkey123")
+    private_key               =       file("/home/ubuntu/iac-demo-project/jenkey123")
   }
 
   provisioner "local-exec" {
