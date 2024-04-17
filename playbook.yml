@@ -1,0 +1,10 @@
+---
+- name: Install n configure java
+  hosts: all
+  become: true
+  tasks:
+    - name: Install Java
+      ansible.builtin.apt:
+        name: openjdk-11-jdk-headless
+        update_cache: true
+        state: present
